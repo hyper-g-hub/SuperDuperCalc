@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+:root {
+    --theme1: rgb(74, 86, 94);
+    --theme2: rgb(106, 122, 134);
+    --theme3: rgb(133, 152, 167);
+    --text: rgb(255, 255, 255);
+    --theme_light: rgb(139, 164, 180);
+}
+.title {
+    text-align: center;
+    font-size: 50px;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the text and image */
+    gap: 10px; /* Optional: Adds space between the text and image */
+}
+.titleimg {
+    width: 60px;
+    height: auto;
+}
+body {
+    background-color: var(--theme1);
+    color: var(--text);
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+table, th, td {
+    border: 4px solid var(--theme_light);
+    border-collapse: collapse;
+    text-align: center;
+    background-color: var(--theme2);
+    padding: 0;
+    margin: 0; /* Remove margin to make it fill the entire cell */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width/height */
+}
+td {
+    min-width: 10vw;
+}
+table {
+    width:70%;
+}
+.calc {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.output {
+    border: 3px solid var(--theme_light);
+    background-color: var(--theme2);
+    height: 9vh;
+    font-size: 2.2vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    text-align: left; 
+    width: 86%;
+    margin-bottom: 5px;
+}
+
+.btn {
+    background-color: var(--theme2);
+    transition: background-color 0.3s ease;
+    border: 0;
+    width: 100%; /* Make the button take full width of the td */
+    height: 100%; /* Make the button take full height of the td */
+    font-size: calc(8vw / 2);
+    text-align: center;
+    color: var(--text);
+    margin: 0; /* Remove margin to make it fill the entire cell */
+    display: block; /* Ensures the button is a block-level element, taking up full width and height */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width/height */
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn:hover {
+    background-color: var(--theme3);
+}
